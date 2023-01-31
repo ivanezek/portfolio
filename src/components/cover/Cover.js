@@ -8,7 +8,7 @@ const cover = () => {
           <div class="container">
           <div class="row cover">
             <div class="col">
-              <h1 className='heading-text'>Hola! Soy Iván.</h1>
+              <h1 className='heading-text'>Hola! Soy Iván</h1>
               <div className='text-animation'>
                 <h2 className="start">
                     <span className="middle1">Frontend </span>
