@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap');
+
+
 .cover-container{
     height: 100vh;
     width: 100%;
@@ -13,6 +16,7 @@
 .cover{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 /* HEADER TEXT */
@@ -27,6 +31,12 @@
     font-size: 50px;
 }
 
+.heading-name{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 8rem;
+}
+
 .avatar{
     width: 100%;
 }
@@ -35,10 +45,11 @@
     display: inline-block;
     overflow: hidden;
 }
-.end1, .middle1, .middle2{
+.end2, .middle1, .middle2{
     display: inline-block;
     overflow:hidden;
     height: 1.5em;
+    font-size: 6rem;
 }
 .end2{
     position:absolute;
@@ -61,7 +72,7 @@
 
 @keyframes ani1 {
     0% {
-    max-width: 500px;
+    max-width: 100%;
   }
   
   25% {
@@ -73,11 +84,11 @@
   }
   
   90% {
-    max-width: 500px;
+    max-width: 100%;
   }
   
   100% {
-    max-width: 500px;
+    max-width: 100%;
   }
 }
 

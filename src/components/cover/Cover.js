@@ -1,14 +1,13 @@
 import "./cover.css"
-import AvatarComputer from "../../assets/pic_1.svg"
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const cover = () => {
   return (
     <div id="home" className='cover-container'>
           <div class="container">
-          <div class="row cover">
-            <div class="col">
-              <h1 className='heading-text'>Hola! Soy Iván</h1>
+          <div class="cover">
+              <h2 className='heading-text'>Hola! Soy</h2>
+              <h1 className="heading-name">IVÁN ROSALES</h1>
               <div className='text-animation'>
                 <h2 className="start">
                     <span className="middle1">Frontend </span>
@@ -30,10 +29,6 @@ const cover = () => {
                 <BsGithub/>
                 </a>
               </div>
-            </div>
-            <div class="col">
-              <img className="avatar" src={AvatarComputer} alt='computer-me'/>
-            </div>
           </div>
         </div>
       </div>
