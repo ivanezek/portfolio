@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href='#portfolio'>
             <MdComputer />
         </a>
-        <a href='#contact'>
+        <a href='#contact' className='god'>
             <MdEmail />
         </a>
     </nav>
