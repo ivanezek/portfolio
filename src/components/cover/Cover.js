@@ -1,7 +1,12 @@
 import "./cover.css"
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
+
+
 const cover = () => {
+
+
+
   return (
     <div id="home" className='cover-container'>
           <div class="container">
@@ -15,12 +20,14 @@ const cover = () => {
                     <span className="end2">Developer</span>
                 </h2>
               </div>
-              <button type="button" class="btn cv-button">
-                <a href='../../assets/ivan_rosales_cv.pdf' download>Descargar CV</a>
-              </button>
-              <button type="button" class="btn cv-button">
-                <a href='mailto:ivanrosaleset24@gmail.com' target="_blank" rel="noopener noreferrer">Contactar</a>
-              </button>
+              <div className="buttons-container">
+                <button type="button" class="btn cv-button">
+                  <a href='../../assets/ivan_rosales_cv.pdf' download>Descargar CV</a>
+                </button>
+                <button type="button" class="btn cv-button">
+                  <a href='mailto:ivanrosaleset24@gmail.com' target="_blank" rel="noopener noreferrer">Contactar</a>
+                </button>
+              </div>
               <div className="social-icons">
                 <a href="https://www.linkedin.com/in/ivanrosales-/" target="_blank" rel="noopener noreferrer">
                 <BsLinkedin/>

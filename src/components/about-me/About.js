@@ -2,18 +2,34 @@ import React from 'react'
 import "./about.css"
 import AvatarAbout from "../../assets/pic_3.svg"
 import AvatarStacks from "../../assets/pic_4.svg"
-import { MdDevices, MdLightbulbOutline } from 'react-icons/md'
-import { BiRocket } from 'react-icons/bi'
 import { IoLogoHtml5, IoLogoJavascript, IoLogoCss3, IoLogoSass, IoLogoWordpress } from 'react-icons/io'
-import {  FaBootstrap, FaGithub, FaReact, FaElementor } from 'react-icons/fa'
-import { SiFirebase } from 'react-icons/si'
+import {  FaHubspot, FaGithub, FaReact, FaElementor } from 'react-icons/fa'
+import { MouseParallaxContainer, MouseParallaxChild  } from "react-parallax-mouse"
 
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 const About = () => {
   return (
-  <div id='about' className='container'>
+  <div id='about' className='reveal'>
     <div className="container">
-        <div className="row">
+        <div className="row about-me">
           <div className="col">
             <h2>Sobre mi</h2>
             <p className='about-me-p bio'>Mi nombre es Iván Rosales, tengo 21 años y soy de Buenos Aires, Argentina.</p>
@@ -26,44 +42,155 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className='web-items'>
-          <div className="row">
-            <div className="col web-item">
-              <MdDevices/>
-              <h3>Responsive</h3>
-              <p className='about-me-p'>Mis sitios funcionan en cualquier dispositivo, grande o pequeño</p>
+        <div className='stack-container reveal'>
+          <h2 className='stack-heading'>Mi stack de tecnologías</h2>
+          <div className='row'>
+            <div className='col stack__list'>
+            <MouseParallaxContainer className="parallax"
+                containerStyle={{
+                  width: "100%",
+                overflow: "visible",
+                }}
+                globalFactorX={0.3}
+                globalFactorY={0.3}
+                resetOnLeave>
+                
+                <ul>
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                  HTML5
+                  <IoLogoHtml5/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                  CSS
+                  <IoLogoCss3/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                JAVASCRIPT
+                  <IoLogoJavascript/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                REACT JS
+                  <FaReact/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                SASS
+                  <IoLogoSass/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                HUBSPOT
+                  <FaHubspot/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                WORDPRESS
+                  <IoLogoWordpress/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                ELEMENTOR
+                  <FaElementor/> 
+                </li>
+                </MouseParallaxChild> 
+                <MouseParallaxChild
+                factorX={0.9}
+                factorY={0.5}
+                style={{
+                  
+                  width: "auto",
+                  height: "100%"
+                }}
+                >
+                <li className='item-list'>
+                GIT
+                  <FaGithub/> 
+                </li>
+                </MouseParallaxChild> 
+                  </ul>
+                </MouseParallaxContainer>
+              
             </div>
-            <div className="col web-item">
-              <MdLightbulbOutline/>
-              <h3>Intuitivo</h3>
-              <p className='about-me-p'>Fáciles de entender y usar, aplicación intuitiva UX/UI</p>
-            </div>
-            <div className="col web-item">
-              <BiRocket/>
-              <h3>Dinámico</h3>
-              <p className='about-me-p'>Los sitios web no tienen que ser estáticos, darles vida es mi prioridad!</p>
+            <div className='col stack-img'>
+                <img src={AvatarStacks} alt="My Stacks"/>
             </div>
           </div>
-        </div>
-        <h2 className='stack-heading'>Mi stack de tecnologías</h2>
-        <div className='row'>
-          <div className='col stack__list'>
-            <ul>
-              <li>HTML5 <IoLogoHtml5/> </li>
-              <li>CSS3 <IoLogoCss3/> </li>
-              <li>JAVASCRIPT <IoLogoJavascript/> </li>
-              <li>REACT <FaReact/> </li>
-              <li>SASS <IoLogoSass/> </li>
-              <li>BOOTSTRAP <FaBootstrap/> </li>
-              <li>WORDPRESS <IoLogoWordpress/> </li>
-              <li>ELEMENTOR <FaElementor/> </li>
-              <li>GIT <FaGithub/> </li>
-              <li>FIREBASE <SiFirebase/> </li>
-            </ul>
-          </div>
-          <div className='col stack-img'>
-              <img src={AvatarStacks} alt="My Stacks"/>
-          </div>
+
         </div>
     </div>
   </div>

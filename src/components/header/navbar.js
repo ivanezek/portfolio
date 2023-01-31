@@ -7,7 +7,7 @@ import { MdComputer, MdEmail } from "react-icons/md";
 const Navbar = () => {
   return (
     <nav>
-        <a href='#home'>
+        <a href="#home">
             <FaHome />
         </a>
         <a href='#about'>
