@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+  --purple: rgba(64, 7, 198, 0.849);
+  --orange: #ff6a00;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+
+}
