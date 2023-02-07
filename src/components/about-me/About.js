@@ -1,10 +1,8 @@
 import React from 'react'
 import "./about.css"
 import AvatarAbout from "../../assets/pic_3.svg"
-import AvatarStacks from "../../assets/pic_4.svg"
-import { IoLogoHtml5, IoLogoJavascript, IoLogoCss3, IoLogoSass, IoLogoWordpress } from 'react-icons/io'
-import {  FaHubspot, FaGithub, FaReact, FaElementor } from 'react-icons/fa'
-import { MouseParallaxContainer, MouseParallaxChild  } from "react-parallax-mouse"
+
+
 
 
 function reveal() {
@@ -32,8 +30,10 @@ const About = () => {
         <div className="row about-me">
           <div className="col">
             <h2>Sobre mi</h2>
-            <p className='about-me-p bio'>Mi nombre es Iván Rosales, tengo 21 años y soy de Buenos Aires, Argentina.</p>
-            <p className='about-me-p bio'>Empecé en 2021 a interesarme por el mundo del desarrollo y la programación, y decidí anotarme en Coderhouse para capacitarme con el fin de convertirme en un Full Stack Developer.
+            <p className='about-me-p bio'>Mi nombre es Iván Rosales, tengo 22 años y soy de Buenos Aires, Argentina.</p>
+            <p className='about-me-p bio'>Empecé en 2021 a capacitarme sobre el Desarrollo Frontend, adquiriendo conocimientos de diferentes academias y cursos para poder formarme como profesional.
+            </p>
+            <p className='about-me-p bio'>Conseguí mi primer trabajo en <a href='https://www.happyagencies.com/'>Happy Agencies</a> donde trabajé durante 8 meses, aprendiendo mucho sobre HubSpot y poniendo en práctica mis conocimientos sobre el maquetado de Landing Pages y la creación de diferentes sitios web.
             </p>
           </div>
           <div className="col">
@@ -41,156 +41,6 @@ const About = () => {
               <img src={AvatarAbout} alt="About me"/>
             </div>
           </div>
-        </div>
-        <div className='stack-container reveal'>
-          <h2 className='stack-heading'>Mi stack de tecnologías</h2>
-          <div className='row'>
-            <div className='col stack__list'>
-            <MouseParallaxContainer className="parallax"
-                containerStyle={{
-                  width: "100%",
-                overflow: "visible",
-                }}
-                globalFactorX={0.3}
-                globalFactorY={0.3}
-                resetOnLeave>
-                
-                <ul>
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                  HTML5
-                  <IoLogoHtml5/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                  CSS
-                  <IoLogoCss3/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                JAVASCRIPT
-                  <IoLogoJavascript/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                REACT JS
-                  <FaReact/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                SASS
-                  <IoLogoSass/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                HUBSPOT
-                  <FaHubspot/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                WORDPRESS
-                  <IoLogoWordpress/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                ELEMENTOR
-                  <FaElementor/> 
-                </li>
-                </MouseParallaxChild> 
-                <MouseParallaxChild
-                factorX={0.9}
-                factorY={0.5}
-                style={{
-                  
-                  width: "auto",
-                  height: "100%"
-                }}
-                >
-                <li className='item-list'>
-                GIT
-                  <FaGithub/> 
-                </li>
-                </MouseParallaxChild> 
-                  </ul>
-                </MouseParallaxContainer>
-              
-            </div>
-            <div className='col stack-img'>
-                <img src={AvatarStacks} alt="My Stacks"/>
-            </div>
-          </div>
-
         </div>
     </div>
   </div>

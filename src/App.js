@@ -1,6 +1,7 @@
 import './App.css';
 import Cover from './components/cover/Cover.js';
 import About from './components/about-me/About.js';
+import Stack from "./components/stack-list/Stack"
 import Navbar from './components/header/navbar.js';
 import Portfolio from './components/portfolio/Portfolio';
 import Loading from './components/loading/Loading'
@@ -28,9 +29,12 @@ useEffect(
        :
       <div className='home-container'>
         <Navbar />
-        <Cover/>
-        <About/>
-        <Portfolio/>
+        <div className='body-container'>
+          <Cover/>
+          <About/>
+          <Stack/>
+          <Portfolio/>
+        </div>
       </div> }
     </div>
   );

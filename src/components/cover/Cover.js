@@ -1,5 +1,6 @@
 import "./cover.css"
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import videoBackground from "../../assets/bg.mp4"
 
 
 
@@ -9,6 +10,9 @@ const cover = () => {
 
   return (
     <div id="home" className='cover-container'>
+      <video autoPlay loop muted plays-inline className="back-video">
+        <source src={videoBackground} type="video/mp4"></source>
+      </video>
           <div class="container">
           <div class="cover">
               <h2 className='heading-text'>Hola! Soy</h2>
