@@ -1,6 +1,8 @@
 #about{
     display: flex;
     justify-content: center;
+    color: #d6bef1;
+    background: linear-gradient(180deg,rgba(3,78,145,0) 2.44%,rgba(3,78,145,.35) 24.17%,rgba(3,78,145,.58) 33.87%,rgba(3,78,145,.644) 47.16%,rgba(3,78,145,.633) 58.77%,rgba(3,78,145,.527) 71%,rgba(3,78,145,0) 98.43%);
 }
 
 .avatar-about{
@@ -33,7 +35,7 @@
 }
 
 .bio > a {
-    color: var(--purple);
+    color: #c6c5ed;
 }
 
 .web-items{

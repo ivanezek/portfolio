@@ -3,22 +3,41 @@ import "./navbar.css"
 import { FaHome, FaUserAlt,  } from "react-icons/fa";
 import { MdComputer, MdEmail } from "react-icons/md";
 
-
 const Navbar = () => {
   return (
     <nav>
-        <a href="#home">
-            <FaHome />
-        </a>
-        <a href='#about'>
-            <FaUserAlt />
-        </a>
-        <a href='#portfolio'>
-            <MdComputer />
-        </a>
-        <a href='#contact' className='god'>
-            <MdEmail />
-        </a>
+       <div class="wrapper">
+         <div class="icon effect"> 
+            <div class="tooltip">
+               Inicio
+            </div>
+            <span> <FaHome /></span>
+         </div>
+         <div class="icon effect">
+            <div class="tooltip">
+               Sobre mi
+            </div>
+            <span><FaUserAlt /></span>
+         </div>
+         <div class="icon effect">
+            <div class="tooltip">
+               Tecnologías
+            </div>
+            <span><MdComputer /></span>
+         </div>
+         <div class="icon effect">
+            <div class="tooltip">
+               Portfolio
+            </div>
+            <span><MdEmail /></span>
+         </div>
+         <div class="icon effect">
+            <div class="tooltip">
+               Contacto
+            </div>
+            <span><MdEmail /></span>
+         </div>
+      </div>
     </nav>
   )
 }
