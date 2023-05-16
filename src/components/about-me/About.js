@@ -33,9 +33,9 @@ const About = () => {
               <div className="col">
                 <h2>Sobre mi</h2>
                 <p className='about-me-p bio'>Mi nombre es Iván Rosales, tengo 22 años y soy de Buenos Aires, Argentina.</p>
-                <p className='about-me-p bio'>Empecé en 2021 a capacitarme sobre el Desarrollo Frontend, adquiriendo conocimientos de diferentes academias y cursos para poder formarme como profesional.
+                <p className='about-me-p bio'>Soy un desarrollador Frontend con +1 año de experiencia, trabajando activamente en diferentes proyectos aplicando multiples enfoques y tecnologías desde React hasta Wordpress con Elementor.
                 </p>
-                <p className='about-me-p bio'>Conseguí mi primer trabajo en <a href='https://www.happyagencies.com/'>Happy Agencies</a>, lugar donde pude aprender mucho sobre HubSpot y poner en práctica mis conocimientos sobre el maquetado de Landing Pages y la creación de diferentes sitios web.
+                <p className='about-me-p bio'>Me dedico a la construcción de sitios web optimizados para su visualización en diferentes dispositivos, ofreciendo una experiencia eficiente y atractiva para el usuario. 
                 </p>
               </div>
               <div className="col">

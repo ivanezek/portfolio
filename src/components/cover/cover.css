@@ -29,7 +29,10 @@
     margin-right: 10%;
 }
 
-.start{    font-size: 32px !important;}
+.start{    
+    font-size: 32px !important;
+
+}
 
 .heading-text{
     color: white;
@@ -187,4 +190,26 @@
 }
 .social-icons a:hover{
     color: var(--purple);
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 768px) { 
+    .start{
+        margin-left: -70px;
+    }
+
+    .end2, .middle1, .middle2{
+        font-size: 2rem;
+    }
+
+    .heading-text{
+        font-size: 25px;
+    }
+
+    .heading-name{
+        font-size: 4rem;
+    }
+
+    .cv-button a{
+        font-size: 16px;
+    }
 }

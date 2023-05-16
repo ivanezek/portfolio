@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Loading from './components/loading/Loading'
 import { useEffect, useState } from 'react';
 
+
 function App() {
 
 const [loading, setLoading] = useState(false)
@@ -23,7 +24,7 @@ useEffect(
 
 
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       { loading ? 
         <Loading/>
        :

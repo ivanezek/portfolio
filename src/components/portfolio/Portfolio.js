@@ -1,7 +1,6 @@
 import React from 'react'
 import "./portfolio.css"
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import PortfolioList from './PortfolioList';
 import Data from "../../data/Data"
 import { useState } from 'react';
 
@@ -19,11 +18,11 @@ function Portfolio(){
   }
 
   return (
-    <div id='portfolio' className=''>
+    <div id='portfolio'>
       <div className='container reveal'>
-        <div className='row'>
-          <div className='col container-list'>
-            <h2 className='portfolio-heading'>Algunos de mis trabajos</h2>
+        <h2 className='portfolio-heading'>Algunos de mis trabajos</h2>
+        <div className='portfolio-items'>
+          <div className='container-list'>
             <div className='work-list'>
                 {Data.map((proyecto) => (
                   <button key={proyecto.id} onClick={() => handleClick(proyecto.id)} className={activeClass === proyecto.id ? 'active-btn' : ''}>
@@ -33,7 +32,7 @@ function Portfolio(){
                 ))}
             </div>
           </div>
-          <div className='col work-display'>
+          <div className='work-display'>
             <div className='url'>
                   <a href={proyectoSeleccionado.url} target="_blank">
                     {proyectoSeleccionado.url}

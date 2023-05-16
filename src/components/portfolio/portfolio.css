@@ -1,5 +1,4 @@
 #portfolio{
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,14 +12,20 @@
     font-weight: 700;
     font-size: 45px;
     padding-bottom: 25px;
+    text-align: center;
 }
 
+.portfolio-items{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .work-display{
     border-radius: 12px;
     background-color: #05060c;
     height: 35rem;
-    width: 30rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +54,7 @@
 .work-info{
     display: flex;
     gap: 2rem;
+    width: 100%;
 }
 
 .work-description h2{
@@ -64,26 +70,34 @@
 
 .work-description{
     height: 25rem;
-    width: 40%;
+    width: 25%;
     background-color: #4d5084;
     border-radius: 12px;
-    padding: 10px;
+    padding: 15px 10px;
     text-align: center;
 }
 
 .work-demo{
     height: 25rem;
-    width: 24rem;
+    width: 75%;
     background-color: #4d5084;
     border-radius: 12px;
-    padding: 5px;
     text-align: center;
+}
+
+
+.work-demo img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
 }
 
 /* WORK LIST */
 
-.worklist {
-    max-width: 500px;
+.work-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .work-list button{
@@ -93,9 +107,9 @@
     margin-bottom: 15px;
     border: 1px solid white;
     border-radius: 12px;
-    width: 70%;
+    width: 18%;
     height: 50px;
-    font-size: 24px;
+    font-size: 15px;
     padding: 30px 15px;
     display: flex;
     align-items: center;
@@ -115,4 +129,3 @@
 .work-list button svg:hover{
     color: #106ede;
 }
-

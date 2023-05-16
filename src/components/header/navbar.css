@@ -79,3 +79,19 @@
     background: #0f111f;
   }
  
+  @media screen and (min-device-width: 360px) and (max-device-width: 768px) {
+
+      .wrapper{
+        left: 50%;
+        bottom: 0;
+      }
+
+      .tooltip{
+        display: none;
+      }
+
+      .wrapper .icon{
+        margin: 0;
+      }
+   }
+

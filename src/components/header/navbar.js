@@ -1,6 +1,6 @@
 import React from 'react'
 import "./navbar.css"
-import { FaHome, FaUserAlt,  } from "react-icons/fa";
+import { FaHome, FaUserAlt, FaCode, FaBriefcase  } from "react-icons/fa";
 import { MdComputer, MdEmail } from "react-icons/md";
 
 const Navbar = () => {
@@ -23,13 +23,13 @@ const Navbar = () => {
             <div class="tooltip">
                Tecnologías
             </div>
-            <span><MdComputer /></span>
+            <span><FaCode /></span>
          </div>
          <div class="icon effect">
             <div class="tooltip">
                Portfolio
             </div>
-            <span><MdEmail /></span>
+            <span><FaBriefcase /></span>
          </div>
          <div class="icon effect">
             <div class="tooltip">
