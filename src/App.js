@@ -4,7 +4,9 @@ import About from './components/about-me/About.js';
 import Stack from "./components/stack-list/Stack"
 import Navbar from './components/header/navbar.js';
 import Portfolio from './components/portfolio/Portfolio';
-import Loading from './components/loading/Loading'
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import Loading from './components/loading/Loading';
 import { useEffect, useState } from 'react';
 
 
@@ -17,7 +19,7 @@ useEffect(
     setLoading(true)
     setTimeout( ()=>{
       setLoading(false)
-    }, 5000)
+    }, 3000)
   }, [])
 
  
@@ -35,6 +37,8 @@ useEffect(
           <About/>
           <Stack/>
           <Portfolio/>
+          <Contact/>
+          <Footer />
         </div>
       </div> }
     </div>

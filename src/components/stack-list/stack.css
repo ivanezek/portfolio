@@ -62,3 +62,36 @@
 .stack-img img{
     width: 80%;
 }
+
+
+@media screen and (min-width: 360px) and (max-width: 1024px) { 
+
+    #stack{
+        padding-top: 145px;
+        padding-bottom: 145px;
+    }
+
+    .stack-container{
+        height: 100%;
+    }
+
+    #stack h2{
+        font-size: 30px;
+    }
+
+    .stack-container row{
+        flex-direction: column;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    .stack__list ul li, .item-list{
+        width: 100px;
+    }
+
+    .stack-img{
+        display: none;
+    }
+}

@@ -15,6 +15,7 @@
         right: 0;
         bottom: 0;
         z-index: -1;
+        width: 100vw;
      }
 
 .cover{
@@ -76,7 +77,6 @@
 }
 
 .container{
-    display: inline-block;
     overflow: hidden;
 }
 .end2, .middle1, .middle2{
@@ -192,9 +192,13 @@
     color: var(--purple);
 }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 768px) { 
+@media screen and (min-device-width: 360px) and (max-device-width: 1024px) { 
     .start{
         margin-left: -70px;
+    }
+
+    .back-video{
+        width: auto;
     }
 
     .end2, .middle1, .middle2{
@@ -207,6 +211,7 @@
 
     .heading-name{
         font-size: 4rem;
+        padding-bottom: 20px;
     }
 
     .cv-button a{

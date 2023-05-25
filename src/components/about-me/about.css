@@ -4,9 +4,6 @@
     color: #d6bef1;
  }
 
-.fade-backgr{
-   
-}
 
 .avatar-about{
     display: flex;
@@ -63,3 +60,38 @@
     border-radius: 50%;
 }
 
+
+@media screen and (min-width: 360px) and (max-width: 1024px) { 
+    
+    #about{
+        padding: 45px 10px;
+    }
+
+    .about-text{
+        background-color: black;
+    }
+
+    #about h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-me{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .about-me-p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .avatar-about{
+        padding-top: 50px;
+    }
+
+
+    #about .col, #about .bio{
+        width: 100% !important;
+    }
+}

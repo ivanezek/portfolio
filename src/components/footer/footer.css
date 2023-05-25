@@ -1,0 +1,20 @@
+footer{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+footer hr{
+    padding-bottom: 30px;
+}
+
+footer a, footer a:hover{
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 1024px) {
+
+    footer{
+        padding-bottom: 140px;
+    }
+ }

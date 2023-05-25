@@ -1,0 +1,80 @@
+
+#contact{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#contact h2{
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.contact-text h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.contact-social{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item-social{
+    padding: 20px;
+    background-color: #4d5084;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    flex-direction: column;
+    font-size: 23px;
+    color: white;
+}
+
+.item-social:hover{
+    color: #d6bef1;
+}
+
+.item-social svg{
+    font-size: 100px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+    #contact h2{
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .contact-container{
+        flex-direction: column-reverse;
+    }
+
+    .item-social{
+        width: 150px;
+        height: 150px;
+        padding: 15px;
+    }
+
+    .item-social p{
+        margin: 0;
+    }
+
+    .avatar-contact{
+        text-align: center;
+    }
+
+    .avatar-contact img{
+        padding-top: 40px;
+        max-width: 360px;
+    }
+
+}
