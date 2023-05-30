@@ -1,42 +1,41 @@
 import React from 'react'
 import "./navbar.css"
 import { FaHome, FaUserAlt, FaCode, FaBriefcase  } from "react-icons/fa";
-import { MdComputer, MdEmail } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+
 
 const Navbar = () => {
   return (
     <nav>
        <div class="wrapper">
-         <div class="icon effect"> 
-            <div class="tooltip">
-               Inicio
-            </div>
+         <a href='#home' className="icon effect">
+            <p className='tooltip'>Inicio</p>
             <span> <FaHome /></span>
-         </div>
-         <div class="icon effect">
-            <div class="tooltip">
+         </a>
+         <a class="icon effect" href="#about">
+            <p class="tooltip">
                Sobre mi
-            </div>
+            </p>
             <span><FaUserAlt /></span>
-         </div>
-         <div class="icon effect">
-            <div class="tooltip">
+         </a>
+         <a class="icon effect" href="#stack">
+         <p class="tooltip">
                Tecnologías
-            </div>
+            </p>
             <span><FaCode /></span>
-         </div>
-         <div class="icon effect">
-            <div class="tooltip">
+         </a>
+         <a href="#portfolio" class="icon effect">
+            <p class="tooltip">
                Portfolio
-            </div>
+            </p>
             <span><FaBriefcase /></span>
-         </div>
-         <div class="icon effect">
-            <div class="tooltip">
+         </a>
+         <a href="#contact" class="icon effect">
+         <p class="tooltip">
                Contacto
-            </div>
+            </p>
             <span><MdEmail /></span>
-         </div>
+         </a>
       </div>
     </nav>
   )

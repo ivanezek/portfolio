@@ -22,7 +22,9 @@ useEffect(
     }, 3000)
   }, [])
 
- 
+
+  window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+
 
 
   return (

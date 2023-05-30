@@ -14,6 +14,7 @@
       z-index: 2;
   }
   .wrapper .icon{
+    color: #d6bef1;
     margin: 0 20px;
     text-align: center;
     cursor: pointer;
@@ -41,6 +42,7 @@
     font-size: 25px;
   }
   .wrapper .icon .tooltip{
+
     position: absolute;
     text-align: center;
     width: 9rem;
