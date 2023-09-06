@@ -171,11 +171,11 @@
 
 .cv-button:hover{
     background-position: 100%;
-  color: rgba(3,78,145,.58);
+  color: #d6bef1;
 }
 
 .cv-button a{
-    color: white;
+    color: #d6bef1;
     font-size: 20px;
 }
 
