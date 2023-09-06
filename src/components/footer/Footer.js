@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='container'>
         <hr/>
-        <a href='https://www.linkedin.com/in/ivanrosales-/' target="_blank">Sitio web desarrollado por Iván Rosales</a>
+        <a href='https://www.linkedin.com/in/ivanrosales-/' target="_blank">Website developed by Iván Rosales</a>
     </footer>
   )
 }

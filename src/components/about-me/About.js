@@ -31,11 +31,9 @@ const About = () => {
         <div className="container">
             <div className="row about-me reveal">
               <div className="col about-text">
-                <h2>Sobre mi</h2>
-                <p className='about-me-p bio'>Mi nombre es Iván Rosales, tengo 22 años y soy de Buenos Aires, Argentina.</p>
-                <p className='about-me-p bio'>Soy un desarrollador Frontend con +1 año de experiencia, trabajando activamente en diferentes proyectos aplicando multiples enfoques y tecnologías desde React hasta Wordpress con Elementor.
-                </p>
-                <p className='about-me-p bio'>Me dedico a la construcción de sitios web optimizados para su visualización en diferentes dispositivos, ofreciendo una experiencia eficiente y atractiva para el usuario. 
+                <h2>About me</h2>
+                <p className='about-me-p bio'>My name is Iván Rosales, i'm 22 years old and I live in Buenos Aires, Argentina.</p>
+                <p className='about-me-p bio'>Experienced front-end developer with a year's expertise, committed to creating effective teamwork and delivering innovative web experiences with a focus on optimal user engagement. 
                 </p>
               </div>
               <div className="col">

@@ -1,15 +1,15 @@
 import React from 'react'
 import "./stack.css"
 import { IoLogoHtml5, IoLogoJavascript, IoLogoCss3, IoLogoSass, IoLogoWordpress } from 'react-icons/io'
-import {  FaHubspot, FaGithub, FaReact, FaElementor } from 'react-icons/fa'
+import {  FaHubspot, FaGithub, FaReact, FaElementor, FaBootstrap } from 'react-icons/fa'
+import { SiTailwindcss } from 'react-icons/si'
 import { MouseParallaxContainer, MouseParallaxChild  } from "react-parallax-mouse"
-import AvatarStacks from "../../assets/pic_4.svg"
 
 const Stack = () => {
   return (
     <div id='stack'>
-      <div className='stack-container reveal container'>
-      <h2 className='stack-heading'>Mi stack de tecnologías</h2>
+      <div className='stack-container reveal'>
+      <h2 className='stack-heading'>Tech Skills</h2>
       <div className='row'>
         <div className='col stack__list'>
         <MouseParallaxContainer className="parallax"
@@ -48,6 +48,34 @@ const Stack = () => {
             <li className='item-list'>
               CSS
               <IoLogoCss3/> 
+            </li>
+            </MouseParallaxChild> 
+            <MouseParallaxChild
+            factorX={0.9}
+            factorY={0.5}
+            style={{
+              
+              width: "auto",
+              height: "100%"
+            }}
+            >
+            <li className='item-list'>
+              BOOTSTRAP
+              <FaBootstrap/> 
+            </li>
+            </MouseParallaxChild> 
+            <MouseParallaxChild
+            factorX={0.9}
+            factorY={0.5}
+            style={{
+              
+              width: "auto",
+              height: "100%"
+            }}
+            >
+            <li className='item-list'>
+              TAILWIND
+              <SiTailwindcss/> 
             </li>
             </MouseParallaxChild> 
             <MouseParallaxChild
@@ -151,9 +179,6 @@ const Stack = () => {
               </ul>
             </MouseParallaxContainer>
           
-        </div>
-        <div className='col stack-img'>
-            <img src={AvatarStacks} alt="My Stacks"/>
         </div>
       </div>
 

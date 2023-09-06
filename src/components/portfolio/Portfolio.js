@@ -41,7 +41,7 @@ function Portfolio() {
   return (
     <div id='portfolio'>
       <div className='container reveal'>
-        <h2 className='portfolio-heading'>Algunos de mis trabajos</h2>
+        <h2 className='portfolio-heading'>Recent works</h2>
         <div className='portfolio-items'>
           <div className='container-list'>
             <div className='work-list'>

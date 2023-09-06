@@ -7,7 +7,7 @@ const loading = () => {
   return (
     <div className='loader'>
         <div className='loader-content'>
-        <div class="lds-ring">
+        <div className="lds-ring">
           <div></div><div></div><div></div><div></div>
         </div>
         </div>

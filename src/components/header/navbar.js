@@ -7,32 +7,32 @@ import { MdEmail } from "react-icons/md";
 const Navbar = () => {
   return (
     <nav>
-       <div class="wrapper">
+       <div className="wrapper">
          <a href='#home' className="icon effect">
-            <p className='tooltip'>Inicio</p>
+            <p className='tooltip'>Home</p>
             <span> <FaHome /></span>
          </a>
-         <a class="icon effect" href="#about">
-            <p class="tooltip">
-               Sobre mi
+         <a className="icon effect" href="#about">
+            <p className="tooltip">
+               About me
             </p>
             <span><FaUserAlt /></span>
          </a>
-         <a class="icon effect" href="#stack">
-         <p class="tooltip">
-               Tecnologías
+         <a className="icon effect" href="#stack">
+         <p className="tooltip">
+               Skills
             </p>
             <span><FaCode /></span>
          </a>
-         <a href="#portfolio" class="icon effect">
-            <p class="tooltip">
-               Portfolio
+         <a href="#portfolio" className="icon effect">
+            <p className="tooltip">
+               Work
             </p>
             <span><FaBriefcase /></span>
          </a>
-         <a href="#contact" class="icon effect">
-         <p class="tooltip">
-               Contacto
+         <a href="#contact" className="icon effect">
+         <p className="tooltip">
+               Contact
             </p>
             <span><MdEmail /></span>
          </a>
