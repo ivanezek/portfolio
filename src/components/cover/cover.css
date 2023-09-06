@@ -190,7 +190,7 @@
     margin-right: 20px;
 }
 .social-icons a:hover{
-    color: var(--purple);
+    color: #d6bef1;
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 1024px) { 
