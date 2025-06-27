@@ -32,7 +32,7 @@ const About = () => {
             <div className="row about-me reveal">
               <div className="col about-text">
                 <h2>About me</h2>
-                <p className='about-me-p bio'>My name is Iván Rosales, i'm 22 years old and I live in Buenos Aires, Argentina.</p>
+                <p className='about-me-p bio'>My name is Iván Rosales, i'm 24 years old and I live in Buenos Aires, Argentina.</p>
                 <p className='about-me-p bio'>Experienced front-end developer with a year's expertise, committed to creating effective teamwork and delivering innovative web experiences with a focus on optimal user engagement. 
                 </p>
               </div>
